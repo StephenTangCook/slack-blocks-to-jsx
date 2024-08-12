@@ -1,4 +1,4 @@
-import React, { createContext, useContext, ReactNode, useState } from "react";
+import React, { ReactNode, createContext, useContext, useState } from "react";
 
 type User = {
   id: string;
@@ -7,7 +7,7 @@ type User = {
 
 type Channel = {
   id: string;
-  name: string;
+  name: string | null;
 };
 
 type UserGroup = {
